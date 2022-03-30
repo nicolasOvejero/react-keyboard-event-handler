@@ -1,8 +1,13 @@
 {
   "name": "@infinium/react-keyboard-event-handler",
-  "version": "1.5.6",
+  "version": "1.5.7",
   "description": "A React component for handling keyboard events.",
   "main": "lib/react-keyboard-event-handler.js",
+  "types": "lib/index.d.ts",
+  "files": [
+	"src",
+	"lib"
+  ],
   "scripts": {
     "build": "webpack --env dev && webpack --env build",
     "build:demo": "webpack --env dev && webpack --config webpack.config.demo.js",
@@ -13,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/linsight/react-keyboard-event-handler.git"
+    "url": "https://github.com/Infinium8/react-keyboard-event-handler"
   },
   "keywords": [
     "react",
@@ -27,9 +32,9 @@
   "author": "David Lin",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/linsight/react-keyboard-event-handler/issues"
+    "url": "https://github.com/Infinium8/react-keyboard-event-handler/issues"
   },
-  "homepage": "https://github.com/linsight/react-keyboard-event-handler",
+  "homepage": "https://github.com/Infinium8/react-keyboard-event-handler",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
