@@ -68,7 +68,6 @@
   },
   "peerDependencies": {
     "react": "16 || 17",
-	"react-dom": "16 || 17",
-    "prop-types": "15 || 16"
+	"react-dom": "16 || 17"
   }
 }
