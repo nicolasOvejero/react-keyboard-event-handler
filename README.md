@@ -2,6 +2,10 @@
 
 **PLEASE NOTE: This project is a fork of [this project](https://github.com/linsight/react-keyboard-event-handler) by the same name. This fork only fixes the peer dependency/React versioning issues. We do not take any credit whatsoever for any of the code, all of the credit goes to the original creator, [linsight](https://github.com/linsight)**
 
+You can install this fork with: `yarn add @infinium/react-keyboard-event-handler`
+
+---
+
 A React component for handling keyboard events (keyup, keydown and keypress<sup>\*</sup>).
 
 ## Main features

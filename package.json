@@ -1,17 +1,17 @@
 {
-  "name": "@infinium/react-keyboard-event-handler",
-  "version": "1.5.8",
+  "name": "@skeepers/react-keyboard-event-handler",
+  "version": "1.5.9",
   "description": "A React component for handling keyboard events.",
   "main": "lib/react-keyboard-event-handler.js",
   "types": "lib/index.d.ts",
   "files": [
-	"src",
-	"lib"
+    "src",
+    "lib"
   ],
   "scripts": {
     "build": "webpack --env dev && webpack --env build",
     "build:demo": "webpack --env dev && webpack --config webpack.config.demo.js",
-    "dev": "webpack --progress --colors --watch --env dev",
+    "dev": "webpack --progress --watch --env dev",
     "lint": "eslint ./src/**.js",
     "test": "mocha --require babel-core/register -r jsdom-global/register --colors ./src/*.spec.js",
     "test:watch": "mocha --require babel-core/register -r jsdom-global/register --colors -w ./src/*.spec.js"
@@ -36,38 +36,41 @@
   },
   "homepage": "https://github.com/Infinium8/react-keyboard-event-handler",
   "devDependencies": {
+    "@babel/core": "^7.22.1",
+    "@babel/preset-env": "^7.22.2",
+    "@babel/preset-react": "^7.22.0",
+    "@cfaester/enzyme-adapter-react-18": "^0.7.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.6",
-    "babel-loader": "^7.1.5",
-    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-loader": "^9.1.2",
+    "babel-plugin-add-module-exports": "^1.0.4",
     "babel-preset-env": "^1.7.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
-    "chai": "^4.2.0",
-    "enzyme": "^3.7.0",
-    "enzyme-adapter-react-16": "^1.6.0",
+    "chai": "^4.3.7",
+    "enzyme": "^3.11.0",
     "eslint": "^4.19.1",
     "eslint-loader": "^2.1.1",
-    "html-webpack-plugin": "^3.2.0",
-    "jsdom": "^11.12.0",
+    "html-webpack-plugin": "^5.5.1",
+    "jsdom": "^22.0.0",
     "jsdom-global": "^3.0.2",
-    "mocha": "^4.0.1",
-    "prop-types": "^15.7.2",
-    "react": "^16.8.0",
-    "react-dom": "^16.8.0",
+    "mocha": "^10.2.0",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-provide-state": "^1.0.6",
     "simulate-event": "^1.4.0",
-    "sinon": "^4.5.0",
-    "uglifyjs-webpack-plugin": "^2.0.1",
-    "webpack": "^4.25.1",
-    "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.7.1",
-    "yargs": "^11.1.0"
+    "sinon": "^15.1.0",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^5.84.1",
+    "webpack-cli": "^5.1.1",
+    "webpack-dev-server": "^4.15.0",
+    "yargs": "^17.7.2"
   },
   "peerDependencies": {
-    "react": "16 || 17",
-	"react-dom": "16 || 17"
+    "react": "18",
+    "react-dom": "18"
   }
 }

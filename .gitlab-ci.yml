@@ -1,0 +1,28 @@
+image: node:20-alpine
+
+stages:
+  - publish
+
+# Templates
+include:
+  - project: 'skeepers/teester/infrastructure/pipelines'
+    file: 'package-publish.yml'
+
+.common:
+  before_script:
+    - npm i yarn -g
+    - yarn
+    - yarn build
+    - cp -r package.json README.md lib/@skeepers
+    - cd lib/@skeepers
+
+# Jobs
+publish_latest:
+  extends:
+    - .common
+    - .publish_semver
+
+publish_next:
+  extends:
+    - .common
+    - .publish_semver_prerelease
